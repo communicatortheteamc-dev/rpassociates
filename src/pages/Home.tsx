@@ -10,10 +10,10 @@ export default function Home() {
       <section className="relative h-[600px] bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0" style={{
-          backgroundImage: "url('.\assets\eco-bg.jpg')",
+          backgroundImage: "url('/src/assets/pexels-asphotography-1002703.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.15
+          opacity: 0.50
         }}></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
