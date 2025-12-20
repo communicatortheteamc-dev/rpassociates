@@ -9,13 +9,13 @@ export default function Navbar() {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    // { path: '/about', label: 'About Us' },
-    // { path: '/services', label: 'Services' },
-    // { path: '/projects', label: 'Projects' },
-    // { path: '/industries', label: 'Industries' },
-    // { path: '/clients', label: 'Clients' },
+    { path: '/about', label: 'About Us' },
+    { path: '/services', label: 'Services' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/industries', label: 'Industries' },
+    { path: '/clients', label: 'Clients' },
     { path: '/certifications', label: 'Certifications' },
-    // { path: '/contact', label: 'Contact Us' }
+    { path: '/contact', label: 'Contact Us' }
   ];
 
   const isActive = (path: string) => location.pathname === path;
