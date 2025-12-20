@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Facebook, Twitter } from 'lucide-react';
-
+import logo from "../assets/Asset1.png";
 export default function Footer() {
   return (
     <footer className="bg-white text-black">
@@ -13,7 +13,7 @@ export default function Footer() {
               </div>
               <div className="text-white font-bold text-lg">RP Enviro Associates</div>
             </div> */}
-             <img src="/src/assets/Asset1.png" alt="RP Enviro Associates" className="h-12 w-auto" />
+             <img src={logo} alt="RP Enviro Associates" className="h-12 w-auto" />
             <p className="text-sm leading-relaxed">
               Leading environmental consultants and laboratories providing comprehensive solutions for industries across India.
             </p>

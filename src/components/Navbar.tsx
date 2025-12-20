@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
+import logo from "../assets/Asset1.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function Navbar() {
               <div className="text-2xl font-bold text-gray-800">RP Enviro Associates</div>
               <div className="text-xs text-emerald-600">Labs and Consultants</div>
             </div> */}
-            <img src="/src/assets/Asset1.png" alt="RP Enviro Associates" className="h-12 w-auto" />
+            <img src={logo} alt="RP Enviro Associates" className="h-12 w-auto" />
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">

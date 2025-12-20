@@ -1,7 +1,7 @@
 import * as Icons from 'lucide-react';
 import { CheckCircle } from 'lucide-react';
 import { certifications } from '../data/certifications';
-
+import certificate from "../assets/certificate.jpeg";
 export default function Certifications() {
   return (
     <div>
@@ -22,7 +22,7 @@ export default function Certifications() {
               Our certifications and accreditations demonstrate our commitment to maintaining the highest standards of quality, accuracy, and reliability in all our services.
             </p>
           </div>
-<img src="src/assets/certificate.jpeg" alt="Certifications" className="w-full  object-cover rounded-xl mb-12 shadow-lg border border-gray-200" />
+<img src={certificate} alt="Certifications" className="w-full  object-cover rounded-xl mb-12 shadow-lg border border-gray-200" />
           <div className="grid md:grid-cols-2 gap-8">
             {certifications.map((cert, index) => {
               const IconComponent = (Icons as any)[cert.icon];

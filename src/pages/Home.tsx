@@ -3,6 +3,8 @@ import { ArrowRight, CheckCircle, Users, Award, Briefcase, TrendingUp, Leaf } fr
 import * as Icons from 'lucide-react';
 import { services } from '../data/services';
 import { projects } from '../data/projects';
+import bgImage from "../assets/pexels-asphotography-1002703.jpg";
+import ecoBg from "../assets/eco-bg1.jpg";
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
       <section className="relative h-[600px] bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0" style={{
-          backgroundImage: "url('/src/assets/pexels-asphotography-1002703.jpg')",
+          backgroundImage: `url(${bgImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 0.50
@@ -74,12 +76,12 @@ export default function Home() {
 
         {/* Animated eco grid */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(16,185,129,0.15)_1px,transparent_0)] bg-[size:32px_32px] animate-[gridMove_30s_linear_infinite]" />
-<div
-  className="absolute inset-0 -z-25 bg-center bg-cover bg-no-repeat opacity-40"
-  style={{
-    backgroundImage: `url('/src/assets/eco-bg.jpg')`,
-  }}
-/>
+        <div
+          className="absolute inset-0 -z-25 bg-center bg-cover bg-no-repeat opacity-40"
+          style={{
+            backgroundImage: `url('/src/assets/eco-bg.jpg')`,
+          }}
+        />
         {/* Floating soft shapes */}
         <div className="absolute top-24 left-16 w-72 h-72 bg-emerald-200/30 rounded-full blur-3xl animate-[float_14s_ease-in-out_infinite]" />
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-lime-200/30 rounded-full blur-3xl animate-[float_18s_ease-in-out_infinite]" />
@@ -166,7 +168,7 @@ export default function Home() {
       <section className="relative py-2 overflow-hidden">
         {/* 1. The Smooth Background Gradient (Sky to Grass) */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#e0f2fe] via-[#f0fdf4] to-[#dcfce7] -z-10" />
-       
+
         {/* 2. Soft Decorative Elements (Mimicking the image style) */}
         <div className="absolute top-10 right-[-5%] w-64 h-64 bg-emerald-200/30 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 left-[-5%] w-80 h-80 bg-blue-200/30 rounded-full blur-3xl" />
@@ -175,16 +177,16 @@ export default function Home() {
         <div className="absolute top-20 left-10 opacity-20 animate-bounce transition-all duration-1000">
           <Leaf className="text-emerald-600 transform rotate-45" size={40} />
         </div>
-<div>
-   <div
-          className="absolute inset-0 -z-25 bg-center bg-cover bg-no-repeat opacity-40"
-          style={{
-            backgroundImage: `url('/src/assets/eco-bg1.jpg')`,
-          }}
-        />
-</div>
+        <div>
+          <div
+            className="absolute inset-0 -z-25 bg-center bg-cover bg-no-repeat opacity-40"
+            style={{
+              backgroundImage: `url(${ecoBg})`,
+            }}
+          />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 tracking-tight">
               Our <span className="text-emerald-600">Solutions</span>
