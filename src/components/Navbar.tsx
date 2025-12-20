@@ -23,13 +23,13 @@ export default function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="bg-emerald-700 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-center space-x-6 text-sm">
-          <a href="tel:+919876543210" className="flex items-center space-x-2 hover:text-emerald-200 transition">
+          <a href="tel:+919609509999" className="flex items-center space-x-2 hover:text-emerald-200 transition">
             <Phone size={14} />
-            <span>+91 98765 43210</span>
+            <span>+91 9609509999</span>
           </a>
-          <a href="mailto:info@rpenviro.com" className="flex items-center space-x-2 hover:text-emerald-200 transition">
+          <a href="mailto:rpeassociates@gmail.com" className="flex items-center space-x-2 hover:text-emerald-200 transition">
             <Mail size={14} />
-            <span>info@rpenviro.com</span>
+            <span>rpeassociates@gmail.com</span>
           </a>
         </div>
       </div>
@@ -37,13 +37,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+            {/* <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
               RP
             </div>
             <div>
               <div className="text-2xl font-bold text-gray-800">RP Enviro Associates</div>
               <div className="text-xs text-emerald-600">Labs and Consultants</div>
-            </div>
+            </div> */}
+            <img src="/src/assets/Asset1.png" alt="RP Enviro Associates" className="h-12 w-auto" />
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">
